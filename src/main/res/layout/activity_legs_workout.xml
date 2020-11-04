@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".drawer.activities.ArmsWorkOutActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:titleTextColor="@color/apptoolbarcolor" />
+
+    <com.cbr.gradienttextview.GradientTextView
+        android:id="@+id/gradientText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/legs_workout"
+        android:layout_margin="10dp"
+        android:textSize="35sp"
+        app:gt_color_list="@array/blueGradient"
+        android:layout_below="@+id/toolbar"
+        app:gt_gradient_direction="right" />
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/frontThighs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gradientText"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:orientation="vertical"
+
+        card_view:cardCornerRadius="8dp"
+        card_view:cardElevation="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/inner_bg_a"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="10dp"
+
+                android:orientation="horizontal">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/front_thigh"
+                    card_view:civ_border_color="@color/colorBlack_1000"
+                    card_view:civ_border_width="0.5dp" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/frontThigs"
+                        android:textColor="@color/textgradientend"
+                        android:textSize="25sp" />
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+
+                    android:gravity="right">
+
+
+                    <ProgressBar
+                        android:id="@+id/frontThighsProgress"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/circle_shape"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/circular_progress_bar"
+                        android:secondaryProgress="0" />
+
+                    <TextView
+                        android:id="@+id/textFrontThighsProgress"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_alignBottom="@+id/frontThighsProgress"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:text="0%"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/textgradientend" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/forward_icon" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/backThighs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frontThighs"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:orientation="vertical"
+
+        card_view:cardCornerRadius="8dp"
+        card_view:cardElevation="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/inner_bg_a"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="10dp"
+
+                android:orientation="horizontal">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/back_thigh"
+                    card_view:civ_border_color="@color/colorBlack_1000"
+                    card_view:civ_border_width="0.5dp" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/backThigs"
+                        android:textColor="@color/textgradientend"
+                        android:textSize="25sp" />
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+
+                    android:gravity="right">
+
+
+                    <ProgressBar
+                        android:id="@+id/backThighsProgress"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/circle_shape"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/circular_progress_bar"
+                        android:secondaryProgress="0" />
+
+                    <TextView
+                        android:id="@+id/textBackThighsProgress"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_alignBottom="@+id/backThighsProgress"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:text="0%"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/textgradientend" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/forward_icon" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/calfs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/backThighs"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:orientation="vertical"
+
+        card_view:cardCornerRadius="8dp"
+        card_view:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/inner_bg_a"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="10dp"
+
+                android:orientation="horizontal">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/calfs"
+                    card_view:civ_border_color="@color/colorBlack_1000"
+                    card_view:civ_border_width="0.5dp" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/calfs"
+                        android:textColor="@color/textgradientend"
+                        android:textSize="25sp" />
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+
+                    android:gravity="right">
+
+
+                    <ProgressBar
+                        android:id="@+id/calfsProgress"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/circle_shape"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/circular_progress_bar"
+                        android:secondaryProgress="0" />
+
+                    <TextView
+                        android:id="@+id/textCalfsProgress"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_alignBottom="@+id/calfsProgress"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:text="0%"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/textgradientend" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/forward_icon" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/hips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calfs"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:orientation="vertical"
+
+        card_view:cardCornerRadius="8dp"
+        card_view:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/inner_bg_a"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="10dp"
+
+                android:orientation="horizontal">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/hips"
+                    card_view:civ_border_color="@color/colorBlack_1000"
+                    card_view:civ_border_width="0.5dp" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hips"
+                        android:textColor="@color/textgradientend"
+                        android:textSize="25sp" />
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+
+                    android:gravity="right">
+
+
+                    <ProgressBar
+                        android:id="@+id/hipsProgress"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/circle_shape"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/circular_progress_bar"
+                        android:secondaryProgress="0" />
+
+                    <TextView
+                        android:id="@+id/textHipsProgress"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_alignBottom="@+id/hipsProgress"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:text="0%"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/textgradientend" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/forward_icon" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner" />
+</RelativeLayout>

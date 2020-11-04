@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="redGradient">
+        <item>@color/titlegradientstart</item>
+        <item>@color/titlegradientend</item>
+    </array>
+
+    <array name="greenGradient">
+        <item>@color/textgradientstart</item>
+        <item>@color/textgradientend</item>
+    </array>
+
+    <array name="blueGradient">
+        <item>@color/blueGradient</item>
+        <item>@color/lightBlueGradient</item>
+    </array>
+</resources>

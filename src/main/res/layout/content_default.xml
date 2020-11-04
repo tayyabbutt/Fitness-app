@@ -1,0 +1,994 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_default">
+
+    <LinearLayout
+        android:id="@+id/allexcercise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/gradientText"
+                android:layout_marginLeft="10dp"
+                android:text="ALL"
+                android:textColor="#f0ff00"
+                android:textSize="55sp"
+
+                android:textStyle="bold" />
+
+
+            <com.cbr.gradienttextview.GradientTextView
+                android:id="@+id/gradientTextMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/all"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:text="EXERCISES"
+                android:textSize="45sp"
+                android:textStyle="bold"
+                app:gt_color_list="@array/blueGradient"
+                app:gt_gradient_direction="right" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/bell"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|right"
+            android:layout_weight="0.5"
+            app:srcCompat="@drawable/gym"
+            tools:ignore="VectorDrawableCompat" />
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/absWorkout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/allexcercise"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:orientation="vertical"
+        card_view:cardCornerRadius="8dp"
+
+        card_view:cardElevation="0dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/inner_bg_a"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+
+                android:padding="10dp">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/abs_workout1"
+                    card_view:civ_border_color="@color/colorBlack_1000"
+                    card_view:civ_border_width="0.5dp" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/abs_workout"
+                        android:textColor="@color/textgradientend"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/program_3"
+                        android:textColor="@color/colorBlack_1000"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="right">
+
+
+                    <ProgressBar
+                        android:id="@+id/absWorkoutProgressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/circle_shape"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/circular_progress_bar"
+                        android:secondaryProgress="0" />
+
+                    <TextView
+                        android:id="@+id/absWorkoutTextProgressBar"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_alignBottom="@+id/absWorkoutProgressBar"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:text="0%"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/textgradientend" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/foreward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/forward_icon" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/armsWorkout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/absWorkout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:orientation="vertical"
+        card_view:cardCornerRadius="8dp"
+        card_view:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/inner_bg_a"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+
+                android:padding="10dp">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/arms_workout1"
+                    card_view:civ_border_color="@color/colorBlack_1000"
+                    card_view:civ_border_width="0.5dp" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arm_workout"
+                        android:textColor="@color/textgradientend"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/program_3"
+                        android:textColor="@color/colorBlack_1000"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+
+                    android:gravity="right">
+
+
+                    <ProgressBar
+                        android:id="@+id/armProgressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/circle_shape"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/circular_progress_bar"
+                        android:secondaryProgress="0" />
+
+                    <TextView
+                        android:id="@+id/armProgressText"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_alignBottom="@+id/armProgressBar"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:text="0%"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/textgradientend" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/forward_icon" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/backWorkout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/armsWorkout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:orientation="vertical"
+        card_view:cardCornerRadius="8dp"
+        card_view:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/inner_bg_a"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+
+                android:padding="10dp">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/back_workout"
+                    card_view:civ_border_color="@color/colorBlack_1000"
+                    card_view:civ_border_width="0.5dp" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/back_workout"
+                        android:textColor="@color/textgradientend"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/program_3"
+                        android:textColor="@color/colorBlack_1000"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+
+                    android:gravity="right">
+
+
+                    <ProgressBar
+                        android:id="@+id/backProgressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/circle_shape"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/circular_progress_bar"
+                        android:secondaryProgress="0" />
+
+                    <TextView
+                        android:id="@+id/backprogressText"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_alignBottom="@+id/backProgressBar"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="11dp"
+                        android:gravity="center"
+                        android:text="0%"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/textgradientend" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/forward_icon" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <!--  <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+          android:id="@+id/contentAdView1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/backWorkout"
+          android:layout_marginLeft="5dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginRight="5dp"
+          android:layout_marginBottom="15dp"
+          ads:adSize="BANNER"
+          ads:adUnitId="@string/banner" />-->
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll2"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@+id/backWorkout"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="15dp"
+        android:visibility="gone">
+
+        <com.facebook.ads.NativeAdLayout
+            android:id="@+id/contentAdView1"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_below="@+id/backWorkout"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical" />
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/wingsWorkout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scroll2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:orientation="vertical"
+        card_view:cardCornerRadius="8dp"
+        card_view:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/inner_bg_a"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+
+                android:padding="10dp">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/wings_workout"
+                    card_view:civ_border_color="@color/colorBlack_1000"
+                    card_view:civ_border_width="0.5dp" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/wings_workout"
+                        android:textColor="@color/textgradientend"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/program_2"
+                        android:textColor="@color/colorBlack_1000"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+
+                    android:gravity="right">
+
+
+                    <ProgressBar
+                        android:id="@+id/wingsProgressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/circle_shape"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/circular_progress_bar"
+                        android:secondaryProgress="0" />
+
+                    <TextView
+                        android:id="@+id/wingsprogressText"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_alignBottom="@+id/wingsProgressBar"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:text="0%"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/textgradientend" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/forward_icon" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/chestWorkout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wingsWorkout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:orientation="vertical"
+        card_view:cardCornerRadius="8dp"
+        card_view:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/inner_bg_a"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+
+                android:padding="10dp">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/chest_workout"
+                    card_view:civ_border_color="@color/colorBlack_1000"
+                    card_view:civ_border_width="0.5dp" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/chest_workout"
+                        android:textColor="@color/textgradientend"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/program_3"
+                        android:textColor="@color/colorBlack_1000"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+
+                    android:gravity="right">
+
+
+                    <ProgressBar
+                        android:id="@+id/chestProgressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/circle_shape"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/circular_progress_bar"
+                        android:secondaryProgress="0" />
+
+                    <TextView
+                        android:id="@+id/chestprogressText"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_alignBottom="@+id/chestProgressBar"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:text="0%"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/textgradientend" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/forward_icon" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <!--  <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+          android:id="@+id/contentAdView2"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/chestWorkout"
+          android:layout_marginLeft="5dp"
+          android:layout_marginTop="20dp"
+          android:layout_marginBottom="15dp"
+          android:layout_marginRight="5dp"
+          ads:adSize="BANNER"
+          ads:adUnitId="@string/banner" />-->
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll1"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@+id/chestWorkout"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="15dp"
+        android:visibility="gone">
+
+        <com.facebook.ads.NativeAdLayout
+            android:id="@+id/contentAdView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/legsWorkout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scroll1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:orientation="vertical"
+        card_view:cardCornerRadius="8dp"
+        card_view:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/inner_bg_a"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+
+                android:padding="10dp">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/legs_workout"
+                    card_view:civ_border_color="@color/colorBlack_1000"
+                    card_view:civ_border_width="0.5dp" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/legs_workout"
+                        android:textColor="@color/textgradientend"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/program_4"
+                        android:textColor="@color/colorBlack_1000"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+
+                    android:gravity="right">
+
+
+                    <ProgressBar
+                        android:id="@+id/legsProgressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/circle_shape"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/circular_progress_bar"
+                        android:secondaryProgress="0" />
+
+                    <TextView
+                        android:id="@+id/legsprogressText"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_alignBottom="@+id/legsProgressBar"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:text="0%"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/textgradientend" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/forward_icon" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/shoulderWorkout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/legsWorkout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:orientation="vertical"
+        card_view:cardCornerRadius="8dp"
+        card_view:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/inner_bg_a"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+
+                android:padding="10dp">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/shoulder_workout"
+                    card_view:civ_border_color="@color/colorBlack_1000"
+                    card_view:civ_border_width="0.5dp" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shouledr_workout"
+                        android:textColor="@color/textgradientend"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/program_3"
+                        android:textColor="@color/colorBlack_1000"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+
+                    android:gravity="right">
+
+
+                    <ProgressBar
+                        android:id="@+id/shoulderProgressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/circle_shape"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/circular_progress_bar"
+                        android:secondaryProgress="0" />
+
+                    <TextView
+                        android:id="@+id/shoulderprogressText"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_alignBottom="@+id/shoulderProgressBar"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:text="0%"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/textgradientend" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/forward_icon" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardioWorkout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shoulderWorkout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:orientation="vertical"
+        card_view:cardCornerRadius="8dp"
+        card_view:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/inner_bg_a"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+
+                android:padding="10dp">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/cardio_workout"
+                    card_view:civ_border_color="@color/colorBlack_1000"
+                    card_view:civ_border_width="0.5dp" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cardio_workout"
+                        android:textColor="@color/textgradientend"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/program_3"
+                        android:textColor="@color/colorBlack_1000"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+
+                    android:gravity="right">
+
+
+                    <ProgressBar
+                        android:id="@+id/cardioProgressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/circle_shape"
+                        android:indeterminate="false"
+                        android:max="100"
+                        android:progress="0"
+                        android:progressDrawable="@drawable/circular_progress_bar"
+                        android:secondaryProgress="0" />
+
+                    <TextView
+                        android:id="@+id/cardioprogressText"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_alignBottom="@+id/cardioProgressBar"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="10dp"
+                        android:gravity="center"
+                        android:text="0%"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="@color/textgradientend" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/forward_icon" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardioWorkout"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner" />
+
+
+</RelativeLayout>

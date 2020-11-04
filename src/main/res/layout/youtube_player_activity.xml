@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:titleTextColor="@color/apptoolbarcolor" />
+
+
+    <fragment
+        android:id="@+id/youtube_view"
+        android:name="com.google.android.youtube.player.YouTubePlayerSupportFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <!--  <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/youtube_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/workout"
+            android:textColor="@color/colorBlack_1000"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/workoutName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/name"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/exercise"
+            android:textColor="@color/colorBlack_1000"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/exerciseName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/name"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/repetition"
+            android:textColor="@color/colorBlack_1000"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/repetitions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/repets"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/doneButton"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/customized_button"
+            android:text="@string/done"
+
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+   <!-- <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner" />
+    </RelativeLayout>-->
+
+</LinearLayout>

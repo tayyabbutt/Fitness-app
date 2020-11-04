@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:titleTextColor="@color/apptoolbarcolor" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/main_list_view"
+            android:layout_below="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="false"
+            android:layout_above="@+id/adView"
+            />
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            ads:adSize="BANNER"
+            android:layout_marginTop="5dp"
+            ads:adUnitId="@string/banner" />
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/cambtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="70dp"
+        android:backgroundTint="@color/textgradientstart"
+        android:src="@android:drawable/ic_menu_camera"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:fabSize="normal" />
+
+    <LinearLayout
+        android:id="@+id/empty_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gallery_default_img" />
+    </LinearLayout>
+
+ <!--   <RelativeLayout
+        android:id="@+id/adId"
+        android:layout_width="match_parent"
+android:visibility="gone"
+        android:layout_height="match_parent">
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner" />
+    </RelativeLayout>-->
+</android.support.design.widget.CoordinatorLayout>

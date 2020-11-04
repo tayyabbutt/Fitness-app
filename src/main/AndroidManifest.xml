@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mobxpert.men30dayfitnesschallenge">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/appicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/fbAppId" />
+
+        <activity
+            android:name=".activities.monthlyPlan.Week2.AbsDayWeek2Day4"
+            android:label="Abs Day"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.monthlyPlan.Week2.ChestDayWeek2Day1"
+            android:label="Chest Day"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.monthlyPlan.Week2.Week2Day2"
+            android:label="Wings Day"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.monthlyPlan.Week2.Week2Day3"
+            android:label="Arms Day"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.monthlyPlan.Week2.Week2Day5"
+            android:label="Shoulder Day"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.monthlyPlan.Week2.Week2Day6"
+            android:label="Legs Day"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.monthlyPlan.Week3.Week3Day1"
+            android:label="Chest Day"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.monthlyPlan.Week3.Week3Day2"
+            android:label="Wings Day"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.monthlyPlan.Week3.Week3Day3"
+            android:label="Arms Day"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.monthlyPlan.Week3.Week3Day4"
+            android:label="Abs Day"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.monthlyPlan.Week3.Week3Day5"
+            android:label="Shoulder Day"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.monthlyPlan.Week3.Week3Day6"
+            android:label="Legs Day"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.monthlyPlan.Week4.Week4Day1"
+            android:label="Chest Day"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.monthlyPlan.Week4.Week4Day2"
+            android:label="Wings Day"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.monthlyPlan.Week4.Week4Day3"
+            android:label="Arms Day"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.monthlyPlan.Week4.Week4Day4"
+            android:label="Abs Day"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.monthlyPlan.Week4.Week4Day5"
+            android:label="Shoulder Day"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.monthlyPlan.Week4.Week4Day6"
+            android:label="Legs Day"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.monthlyPlan.Week1.LegsDay"
+            android:label="Legs Day"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.monthlyPlan.Week1.ShoulderDay"
+            android:label="Shoulder Day"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.monthlyPlan.Week1.AbsDay"
+            android:label="Abs Day"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.monthlyPlan.Week1.ArmsDay"
+            android:label="Arms Day"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.monthlyPlan.Week1.WingsDay"
+            android:label="Wings Day"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.monthlyPlan.Week1.ChestDay"
+            android:label="Chest Day"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.monthlyPlan.SelectPlanActivity"
+            android:label="Select Plan"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/bannerappid" />
+
+        <activity
+            android:name=".activities.PrivacyPolicy"
+            android:label="Privacy Policy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.FullScreenImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.CameraActivity"
+            android:label="Take Picture"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.cardioWorkout.YogaActivity"
+            android:label="@string/select_exercise"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.cardioWorkout.Stretching"
+            android:label="@string/select_exercise"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.cardioWorkout.CardioActivity"
+            android:label="@string/select_exercise"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.CardioWorkoutActivity"
+            android:label="Cardio Workout"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.shoulderWorkout.TrapsActivity"
+            android:label="@string/select_exercise"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.shoulderWorkout.BackShoulderActivity"
+            android:label="@string/select_exercise"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.shoulderWorkout.FrontShoulderActivity"
+            android:label="@string/select_exercise"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ShouldersWorkoutActivity"
+            android:label="Shoulder Workout"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.legsWorkout.HipsActivity"
+            android:label="@string/select_exercise"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.legsWorkout.CalfsActivity"
+            android:label="@string/select_exercise"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.legsWorkout.BackThigsActivity"
+            android:label="@string/select_exercise"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.legsWorkout.FrontThigsActivity"
+            android:label="@string/select_exercise"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.LegsWorkoutActivity"
+            android:label="Legs Workout"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.chestWorkout.LowerChestActivity"
+            android:label="@string/select_exercise"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.chestWorkout.MiddleChestActivity"
+            android:label="@string/select_exercise"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.chestWorkout.UpperChestActivity"
+            android:label="@string/select_exercise"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.ChestWorkoutActivity"
+            android:label="Chest Workout"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.wingWorkout.WingsExtention"
+            android:label="@string/select_exercise"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.wingWorkout.V_ShapeWingActivity"
+            android:label="@string/select_exercise"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.WingsWorkoutActivity"
+            android:label="Wings Workout"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.backWorkout.V_shapeBackActivity"
+            android:label="@string/select_exercise"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.backWorkout.LowerBackActivity"
+            android:label="@string/select_exercise"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.backWorkout.UpperBackActivity"
+            android:label="@string/select_exercise"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.BackWorkoutActivity"
+            android:label="Back Workout"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.absWorkout.SideCuttingActivity"
+            android:label="@string/select_exercise"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.absWorkout.LowerAbsActivity"
+            android:label="@string/select_exercise"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.absWorkout.UperAbsActivity"
+            android:label="@string/select_exercise"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AbsWorkoutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.armsWorkout.ForearmActivity"
+            android:label="@string/select_exercise"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.armsWorkout.TricepsActivity"
+            android:label="@string/select_exercise"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.armsWorkout.BicepsActivity"
+            android:label="@string/select_exercise"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".youtubePlayer.YouTubePlayerActivity"
+            android:label="Start Workout" />
+        <activity
+            android:name=".activities.ArmsWorkOutActivity"
+            android:label="Arms Workout"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.BMI_CalculatorActivity"
+            android:label="BMI Calculator"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.OnBoardingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.Splash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

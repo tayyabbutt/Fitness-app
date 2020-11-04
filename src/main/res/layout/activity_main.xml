@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.infideap.drawerbehavior.Advance3DDrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blueGradient"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+
+    <include
+        layout="@layout/app_bar_default"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/blueGradient"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:headerLayout="@layout/nav_header_main"
+        app:itemIconTint="@color/colorWhite"
+        app:itemTextColor="@color/colorWhite"
+        app:menu="@menu/activity_main_drawer" />
+</com.infideap.drawerbehavior.Advance3DDrawerLayout>
+
+    <!--RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/bannerAdLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="@string/banner" />
+    </LinearLayout>
+
+    <com.infideap.drawerbehavior.Advance3DDrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bannerAdLayout"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true"
+        tools:openDrawer="start">
+
+
+        <include
+            layout="@layout/app_bar_default"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/colorPrimary"
+            android:fitsSystemWindows="true"
+            app:itemTextColor="@color/colorBlack_1000"
+            app:itemIconTint="@color/apptoolbarcolor"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            app:headerLayout="@layout/nav_header_main"
+            app:menu="@menu/activity_main_drawer" />
+
+        &lt;!&ndash;<android.support.design.widget.NavigationView
+            android:id="@+id/nav_view_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:background="@color/colorPrimary"
+            android:fitsSystemWindows="false">
+
+            <include layout="@layout/content_notification" />
+        </android.support.design.widget.NavigationView>&ndash;&gt;
+
+    </com.infideap.drawerbehavior.Advance3DDrawerLayout>
+</RelativeLayout>-->

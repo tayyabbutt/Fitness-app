@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navBmiCalculator"
+            android:icon="@drawable/calculator"
+            android:title="BMI Calculator" />
+        <item
+            android:id="@+id/navSelectPlan"
+            android:icon="@drawable/gym"
+            android:title="Select Plan" />
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Workout Gallery" />
+        <!--<item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Tools" />-->
+    </group>
+
+    <item android:title="Communicate">
+
+        <menu>
+            <item
+                android:id="@+id/nav_rate_us"
+                android:icon="@drawable/rateus"
+
+                android:title="Rate Us" />
+            <item
+                android:id="@+id/nav_review"
+                android:icon="@drawable/review"
+                android:title="Review" />
+        <!--    <item
+                android:id="@+id/nav_privacyPolicy"
+                android:icon="@drawable/caution"
+                android:title="Privacy Policy"/>-->
+        </menu>
+    </item>
+
+</menu>

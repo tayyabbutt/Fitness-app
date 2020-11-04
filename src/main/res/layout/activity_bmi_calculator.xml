@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:titleTextColor="@color/apptoolbarcolor" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.cbr.gradienttextview.GradientTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:text="@string/app_name"
+
+                android:textSize="25sp"
+                app:gt_color_list="@array/redGradient"
+                app:gt_gradient_direction="right" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:gravity="center_horizontal"
+                android:text="@string/weight"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:ems="6"
+                android:inputType="number|numberDecimal"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:gravity="center_horizontal"
+                android:text="@string/height"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:ems="6"
+                android:inputType="number|numberDecimal"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/calc"
+
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/customized_button"
+                android:onClick="calculateBMI"
+                android:padding="10dp"
+                android:text="@string/calculate_bmi"
+                android:textColor="@color/colorWhite" /><!--
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal"
+        android:textSize="45sp" />-->
+            <com.cbr.gradienttextview.GradientTextView
+                android:id="@+id/result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+
+                android:textSize="45sp"
+                app:gt_color_list="@array/greenGradient"
+                app:gt_gradient_direction="right" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/adView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    ads:adSize="MEDIUM_RECTANGLE"
+                    ads:adUnitId="@string/banner" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

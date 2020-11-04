@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".drawer.activities.monthlyPlan.SelectPlanActivity">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:titleTextColor="@color/apptoolbarcolor" />
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context=".drawer.activities.monthlyPlan.SelectPlanActivity">
+
+                <com.cbr.gradienttextview.GradientTextView
+                    android:id="@+id/gradientText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/toolbar"
+                    android:layout_margin="10dp"
+                    android:text="@string/monthplan"
+                    android:textSize="35sp"
+                    app:gt_color_list="@array/redGradient"
+                    app:gt_gradient_direction="right" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/week1"
+                    android:textColor="@color/blueGradient"
+                    android:textSize="20sp" />
+
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:orientation="vertical"
+                    card_view:cardBackgroundColor="#E6EBEBEB"
+
+                    card_view:cardCornerRadius="8dp"
+                    card_view:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/week1Text1"
+
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/black_dot_drawable"
+                                android:gravity="center"
+                                android:text="1"
+                                android:textColor="@color/colorBlack_1000" />
+
+                            <View
+                                android:id="@+id/week1View1"
+
+                                android:layout_width="60dp"
+                                android:layout_height="0.5dp"
+                                android:layout_gravity="center"
+                                android:background="@color/colorBlack_1000" />
+
+                            <TextView
+                                android:id="@+id/week1Text2"
+
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/black_dot_drawable"
+                                android:gravity="center"
+                                android:text="2"
+                                android:textColor="@color/colorBlack_1000" />
+
+                            <View
+                                android:id="@+id/week1View2"
+
+                                android:layout_width="60dp"
+                                android:layout_height="0.5dp"
+                                android:layout_gravity="center"
+                                android:background="@color/colorBlack_1000" />
+
+                            <TextView
+                                android:id="@+id/week1Text3"
+
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/black_dot_drawable"
+                                android:gravity="center"
+                                android:text="3"
+                                android:textColor="@color/colorBlack_1000" />
+
+                            <View
+                                android:id="@+id/week1View3"
+
+                                android:layout_width="60dp"
+                                android:layout_height="0.5dp"
+                                android:layout_gravity="center"
+                                android:background="@color/colorBlack_1000" />
+
+                            <TextView
+                                android:id="@+id/week1Text4"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/black_dot_drawable"
+                                android:gravity="center"
+                                android:text="4"
+                                android:textColor="@color/colorBlack_1000" />
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/week1View4"
+
+                            android:layout_width="0.5dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="20dp"
+                            android:background="@color/colorBlack_1000" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/week1Text7"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/flag"
+                                android:gravity="center"
+
+                                android:textColor="@color/colorBlack_1000" />
+
+                            <View
+                                android:id="@+id/week1View6"
+
+                                android:layout_width="60dp"
+                                android:layout_height="0.5dp"
+                                android:layout_gravity="center"
+                                android:background="@color/colorBlack_1000" />
+
+                            <TextView
+                                android:id="@+id/week1Text6"
+
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/black_dot_drawable"
+                                android:gravity="center"
+                                android:text="6"
+                                android:textColor="@color/colorBlack_1000" />
+
+                            <View
+                                android:id="@+id/week1View5"
+
+                                android:layout_width="60dp"
+                                android:layout_height="0.5dp"
+                                android:layout_gravity="center"
+                                android:background="@color/colorBlack_1000" />
+
+                            <TextView
+                                android:id="@+id/week1Text5"
+
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/black_dot_drawable"
+                                android:gravity="center"
+                                android:text="5"
+                                android:textColor="@color/colorBlack_1000" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/week2"
+                    android:textColor="@color/blueGradient"
+                    android:textSize="20sp" />
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:orientation="vertical"
+                    card_view:cardBackgroundColor="#E6EBEBEB"
+
+                    card_view:cardCornerRadius="8dp"
+                    card_view:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/week2Text1"
+
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/black_dot_drawable"
+                                android:gravity="center"
+                                android:text="1"
+                                android:textColor="@color/colorBlack_1000" />
+
+                            <View
+                                android:id="@+id/week2View1"
+
+                                android:layout_width="60dp"
+                                android:layout_height="0.5dp"
+                                android:layout_gravity="center"
+                                android:background="@color/colorBlack_1000" />
+
+                            <TextView
+                                android:id="@+id/week2Text2"
+
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/black_dot_drawable"
+                                android:gravity="center"
+                                android:text="2"
+                                android:textColor="@color/colorBlack_1000" />
+
+                            <View
+                                android:id="@+id/week2View2"
+
+                                android:layout_width="60dp"
+                                android:layout_height="0.5dp"
+                                android:layout_gravity="center"
+                                android:background="@color/colorBlack_1000" />
+
+                            <TextView
+                                android:id="@+id/week2Text3"
+
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/black_dot_drawable"
+                                android:gravity="center"
+                                android:text="3"
+                                android:textColor="@color/colorBlack_1000" />
+
+                            <View
+                                android:id="@+id/week2View3"
+
+                                android:layout_width="60dp"
+                                android:layout_height="0.5dp"
+                                android:layout_gravity="center"
+                                android:background="@color/colorBlack_1000" />
+
+                            <TextView
+                                android:id="@+id/week2Text4"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/black_dot_drawable"
+                                android:gravity="center"
+                                android:text="4"
+                                android:textColor="@color/colorBlack_1000" />
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/week2View4"
+
+                            android:layout_width="0.5dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="20dp"
+                            android:background="@color/colorBlack_1000" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/week2Text7"
+
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/flag"
+                                android:gravity="center"
+                                android:textColor="@color/colorBlack_1000" />
+
+                            <View
+                                android:id="@+id/week2View6"
+
+                                android:layout_width="60dp"
+                                android:layout_height="0.5dp"
+                                android:layout_gravity="center"
+                                android:background="@color/colorBlack_1000" />
+
+                            <TextView
+                                android:id="@+id/week2Text6"
+
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/black_dot_drawable"
+                                android:gravity="center"
+                                android:text="6"
+                                android:textColor="@color/colorBlack_1000" />
+
+                            <View
+                                android:id="@+id/week2View5"
+
+                                android:layout_width="60dp"
+                                android:layout_height="0.5dp"
+                                android:layout_gravity="center"
+                                android:background="@color/colorBlack_1000" />
+
+                            <TextView
+                                android:id="@+id/week2Text5"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/black_dot_drawable"
+                                android:gravity="center"
+                                android:text="5"
+                                android:textColor="@color/colorBlack_1000" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/week3"
+                    android:textColor="@color/blueGradient"
+                    android:textSize="20sp" />
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:orientation="vertical"
+                    card_view:cardBackgroundColor="#E6EBEBEB"
+
+                    card_view:cardCornerRadius="8dp"
+                    card_view:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/week3Text1"
+
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/black_dot_drawable"
+                                android:gravity="center"
+                                android:text="1"
+                                android:textColor="@color/colorBlack_1000" />
+
+                            <View
+                                android:id="@+id/week3View1"
+
+                                android:layout_width="60dp"
+                                android:layout_height="0.5dp"
+                                android:layout_gravity="center"
+                                android:background="@color/colorBlack_1000" />
+
+                            <TextView
+                                android:id="@+id/week3Text2"
+
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/black_dot_drawable"
+                                android:gravity="center"
+                                android:text="2"
+                                android:textColor="@color/colorBlack_1000" />
+
+                            <View
+                                android:id="@+id/week3View2"
+
+                                android:layout_width="60dp"
+                                android:layout_height="0.5dp"
+                                android:layout_gravity="center"
+                                android:background="@color/colorBlack_1000" />
+
+                            <TextView
+                                android:id="@+id/week3Text3"
+
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/black_dot_drawable"
+                                android:gravity="center"
+                                android:text="3"
+                                android:textColor="@color/colorBlack_1000" />
+
+                            <View
+                                android:id="@+id/week3View3"
+                                android:layout_width="60dp"
+                                android:layout_height="0.5dp"
+                                android:layout_gravity="center"
+                                android:background="@color/colorBlack_1000" />
+
+                            <TextView
+                                android:id="@+id/week3Text4"
+
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/black_dot_drawable"
+                                android:gravity="center"
+                                android:text="4"
+                                android:textColor="@color/colorBlack_1000" />
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/week3View4"
+
+                            android:layout_width="0.5dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="20dp"
+                            android:background="@color/colorBlack_1000" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/week3Text7"
+
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/flag"
+                                android:gravity="center"
+                                android:textColor="@color/colorBlack_1000"/>
+
+                            <View
+                                android:id="@+id/week3View6"
+
+                                android:layout_width="60dp"
+                                android:layout_height="0.5dp"
+                                android:layout_gravity="center"
+                                android:background="@color/colorBlack_1000" />
+
+                            <TextView
+                                android:id="@+id/week3Text6"
+
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/black_dot_drawable"
+                                android:gravity="center"
+                                android:text="6"
+                                android:textColor="@color/colorBlack_1000" />
+
+                            <View
+                                android:id="@+id/week3View5"
+
+                                android:layout_width="60dp"
+                                android:layout_height="0.5dp"
+                                android:layout_gravity="center"
+                                android:background="@color/colorBlack_1000" />
+
+                            <TextView
+                                android:id="@+id/week3Text5"
+
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/black_dot_drawable"
+                                android:gravity="center"
+                                android:text="5"
+                                android:textColor="@color/colorBlack_1000" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/week4"
+                    android:textColor="@color/blueGradient"
+                    android:textSize="20sp" />
+
+                <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/l1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:orientation="vertical"
+                    card_view:cardBackgroundColor="#E6EBEBEB"
+
+                    card_view:cardCornerRadius="8dp"
+                    card_view:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/week4Text1"
+
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/black_dot_drawable"
+                                android:gravity="center"
+                                android:text="1"
+                                android:textColor="@color/colorBlack_1000" />
+
+                            <View
+                                android:id="@+id/week4View1"
+
+                                android:layout_width="60dp"
+                                android:layout_height="0.5dp"
+                                android:layout_gravity="center"
+                                android:background="@color/colorBlack_1000" />
+
+                            <TextView
+                                android:id="@+id/week4Text2"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/black_dot_drawable"
+                                android:gravity="center"
+                                android:text="2"
+                                android:textColor="@color/colorBlack_1000" />
+
+                            <View
+                                android:id="@+id/week4View2"
+
+                                android:layout_width="60dp"
+                                android:layout_height="0.5dp"
+                                android:layout_gravity="center"
+                                android:background="@color/colorBlack_1000" />
+
+                            <TextView
+                                android:id="@+id/week4Text3"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/black_dot_drawable"
+                                android:gravity="center"
+                                android:text="3"
+                                android:textColor="@color/colorBlack_1000" />
+
+                            <View
+                                android:id="@+id/week4View3"
+                                android:layout_width="60dp"
+                                android:layout_height="0.5dp"
+                                android:layout_gravity="center"
+                                android:background="@color/colorBlack_1000" />
+
+                            <TextView
+                                android:id="@+id/week4Text4"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/black_dot_drawable"
+                                android:gravity="center"
+                                android:text="4"
+                                android:textColor="@color/colorBlack_1000" />
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/week4View4"
+                            android:layout_width="0.5dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="20dp"
+                            android:background="@color/colorBlack_1000" />
+
+                        <LinearLayout
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/week4Text7"
+
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/flag"
+                                android:gravity="center"
+                                android:textColor="@color/colorBlack_1000" />
+
+                            <!--<TextView
+                                android:id="@+id/week4Text7"
+
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/black_dot_drawable"
+                                android:gravity="center"
+                                android:text="7"
+                                android:textColor="@color/colorWhite" />-->
+
+                            <View
+                                android:id="@+id/week4View6"
+
+                                android:layout_width="60dp"
+                                android:layout_height="0.5dp"
+                                android:layout_gravity="center"
+                                android:background="@color/colorBlack_1000" />
+
+                            <TextView
+                                android:id="@+id/week4Text6"
+
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/black_dot_drawable"
+                                android:gravity="center"
+                                android:text="6"
+                                android:textColor="@color/colorBlack_1000" />
+
+                            <View
+                                android:id="@+id/week4View5"
+                                android:layout_width="60dp"
+                                android:layout_height="0.5dp"
+                                android:layout_gravity="center"
+                                android:background="@color/colorBlack_1000" />
+
+                            <TextView
+                                android:id="@+id/week4Text5"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/black_dot_drawable"
+                                android:gravity="center"
+                                android:text="5"
+                                android:textColor="@color/colorBlack_1000" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp">
+
+                    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/adView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        ads:adSize="BANNER"
+                        ads:adUnitId="@string/banner" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffff</color>
+    <color name="textColorPrimary">#a1a2bf</color>
+    <!--<color name="textColorPrimary">#a1a2bf</color>-->
+    <color name="colorPrimaryDark">#DADADA</color>
+    <color name="colorAccent">@color/colorRed_A200</color>
+
+    <color name="apptoolbarcolor">#000000</color>
+<!--
+    <color name="apptoolbarcolor">#a1a2bf</color>
+-->
+    <color name="cardcolor">#D5B8B6B6</color>
+    <color name="titlegradientstart">#B80214</color>
+    <color name="titlegradientend">#ff0000</color>
+    <color name="textgradientend">#230561</color>
+    <color name="textgradientstart">#01e181</color>
+
+    <color name="seprator_color">#3f3e44</color>
+    <color name="lite_grey">#D8D8D8</color>
+
+
+    <color name="blueGradient">#230561</color>
+    <color name="lightBlueGradient">#62119B</color>
+
+
+    <!--OnBoard-->
+
+    <color name="selected_dot">#000</color>
+    <color name="idle_dot">#BBBBBB</color>
+    <color name="ob_header">#4A4A4A</color>
+    <color name="ob_desc">#4A4A4A</color>
+
+</resources>

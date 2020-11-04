@@ -1,0 +1,384 @@
+<resources>
+    <string name="app_name">30 Days Mens Fitness Workout</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_right_drawer">Right Drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="player_error">Error initializing YouTube player: %s</string>
+    <string name="ob_get_started">GET STARTED</string>
+    <string name="all_excersise">All Exercises</string>
+    <string name="abs_workout">ABS Workout</string>
+    <string name="arm_workout">ARM Workout</string>
+    <string name="back_workout">Back Workout</string>
+    <string name="wings_workout">Wings Workout</string>
+    <string name="chest_workout">Chest Workout</string>
+    <string name="legs_workout">Legs Workout</string>
+    <string name="shouledr_workout">Shoulders Workout</string>
+    <string name="cardio_workout">Cardio Workout</string>
+    <string name="program_3">3 Programs</string>
+    <string name="program_4">4 Programs</string>
+    <string name="program_2">2 Programs</string>
+    <string name="select_exercise">Select Exercise</string>
+    <string name="biceps">Biceps</string>
+    <string name="triceps">Triceps</string>
+    <string name="forearm">Forearm</string>
+    <string name="uperabs">Upper ABS</string>
+    <string name="uperback">Upper Back</string>
+    <string name="lowerback">Lower Back</string>
+    <string name="vshapeback">V-Shape Back</string>
+    <string name="sidecuting">Side Cutting</string>
+    <string name="lowerabs">Lower ABS</string>
+    <string name="v_shapeWing">V-Shape</string>
+    <string name="wingExtention">Wings Extention</string>
+    <string name="upperchest">Upper Chest</string>
+    <string name="middleChest">Middle Chest</string>
+    <string name="lowerChest">Lower Chest</string>
+    <string name="frontThigs">Front Thigs</string>
+    <string name="backThigs">Back Thigs</string>
+    <string name="calfs">Calfs</string>
+    <string name="hips">Hips</string>
+    <string name="frontShoulder">Front Shoulder</string>
+    <string name="backShoulder">Back Shoulder</string>
+    <string name="traps">Traps</string>
+    <string name="cardio">Cardio</string>
+    <string name="stretching">Stretching</string>
+    <string name="yoga">Yoga</string>
+    <string name="very_severely_underweight">Very Severely Underweight</string>
+    <string name="severely_underweight">Severely Underweight</string>
+    <string name="underweight">Underweight</string>
+    <string name="normal">Normal</string>
+    <string name="overweight">Over weight</string>
+    <string name="obese_class_i">Obese Class 1(Moderity Obese)</string>
+    <string name="obese_class_ii">Obese Class 2(Severely Obese)</string>
+    <string name="obese_class_iii">Obese Class 3(Very Severley Obese)</string>
+    <string name="marketerror">unable to find market app</string>
+    <string name="complete">Complete</string>
+    <string name="calculate_bmi">Calculate BMI</string>
+    <string name="height">Height (cm)</string>
+    <string name="weight">Weight (kg)</string>
+    <string name="monthplan">1 Month Plan</string>
+    <string name="week1">Week-1</string>
+    <string name="week2">Week-2</string>
+    <string name="week3">Week-3</string>
+    <string name="week4">Week-4</string>
+    <string name="excercise_name">Exercise Name</string>
+    <string name="exit">Exit</string>
+    <string name="rateus">Rate US</string>
+    <string name="done">Mark as Done</string>
+    <string name="workout">Workout</string>
+    <string name="name">name</string>
+    <string name="exercise">Exercise</string>
+    <string name="repetition">Repetitions</string>
+    <string name="repets">repetition</string>
+    <string name="repAndSets">12 Reps - 3 Sets</string>
+    <string name="daily_workout">DAILY WORKOUT</string>
+    <string name="daily_workout_desc">Set your daily workout routine and maintain your routine at home</string>
+    <string name="week_4_plan">4 WEEK PLAN</string>
+    <string name="week_4_plan_desc">Amazing training plan for weight management and muscle building</string>
+    <string name="track">TRACK WORKOUT GALLERY</string>
+    <string name="track_desc">Check your workout improvement by uploading your pictures</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="hint">Enter some caption</string>
+    <string name="caption">Want to add some caption?</string>
+    <string name="youtubeOpen">Click Ok button to open YouTube app and then back to this app</string>
+    <string name="noCaption">No caption available</string>
+
+
+    <!--Excersice Name-->
+
+
+    <!--  Abs Workout -->
+    <!-- Lower Abs-->
+
+    <string name="lower_ab_exercise_1">Hanging Leg Raises</string>
+    <string name="lower_ab_exercise_2">Vertical Straight Leg Raise</string>
+    <string name="lower_ab_exercise_3">Decline Bench Leg Raise</string>
+    <string name="lower_ab_exercise_4">Decline Weighted Crunches</string>
+    <string name="lower_ab_exercise_5">Dumbbell Bent Arm Pullovers</string>
+    <string name="lower_ab_exercise_6">Hanging Weighted Leg Lifts</string>
+    <string name="lower_ab_exercise_7">Planks</string>
+
+
+    <!-- Upper Abs-->
+
+    <string name="upper_ab_exercise_1">Decline Bench Crunches</string>
+    <string name="upper_ab_exercise_2">Kneeling Cabel Crunches</string>
+    <string name="upper_ab_exercise_3">Ab Wheel Rollouts</string>
+    <string name="upper_ab_exercise_4">Sprinter Exercise</string>
+    <string name="upper_ab_exercise_5">Decline Weighted Crunches</string>
+    <string name="upper_ab_exercise_6">Knee Raises</string>
+    <string name="upper_ab_exercise_7">Toe Touches</string>
+    <string name="upper_ab_exercise_8">Planks</string>
+
+
+    <!-- Side Cutting Abs-->
+    <string name="siedecutting_ab_exercise_1">Cross Body Crunches</string>
+    <string name="siedecutting_ab_exercise_2">Roman Chair Situps</string>
+    <string name="siedecutting_ab_exercise_3">Russian Twis</string>
+    <string name="siedecutting_ab_exercise_4">Extended Toe Touches</string>
+    <string name="siedecutting_ab_exercise_5">Jumping Jacks</string>
+    <string name="siedecutting_ab_exercise_6">Scissor Stance Jacks</string>
+
+
+    <!-- ARMS WORKOUT-->
+    <!-- Biceps-->
+
+    <string name="biceps_arm_exercise_1">Barbell Curls</string>
+    <string name="biceps_arm_exercise_2">Seated Dumbbell Curls</string>
+    <string name="biceps_arm_exercise_3">Machine Preacher Curls</string>
+    <string name="biceps_arm_exercise_4">Cabel Curls</string>
+    <string name="biceps_arm_exercise_5">One Arm Hammer Curls</string>
+    <string name="biceps_arm_exercise_6">EZ-Bar Curls</string>
+
+
+    <!-- Forearms-->
+    <string name="forearm_arm_exercise_1">Dumbbell Wrist Flexion</string>
+    <string name="forearm_arm_exercise_2">Dumbbell Wrist Extension</string>
+    <string name="forearm_arm_exercise_3">Pull up Bar Hang</string>
+    <string name="forearm_arm_exercise_4">Reverse Barbell Curls</string>
+    <string name="forearm_arm_exercise_5">Towel Pull-up Hang</string>
+    <string name="forearm_arm_exercise_6">Drag Curl</string>
+    <string name="forearm_arm_exercise_7">Grip Curl</string>
+    <string name="forearm_arm_exercise_8">Farmers Walk</string>
+    <string name="forearm_arm_exercise_9">Parallel Bar Hand Walk</string>
+
+
+    <!-- Triceps-->
+    <string name="triceps_arm_exercise_1">Triceps Dumbbell Pushups</string>
+    <string name="triceps_arm_exercise_2">Cabel Pushdown Triceps Extension</string>
+    <string name="triceps_arm_exercise_3">Close Grip Benchpress</string>
+    <string name="triceps_arm_exercise_4">Seated Overhead Dumbbell Extension</string>
+    <string name="triceps_arm_exercise_5">EZ-Bar Skull Crushers</string>
+    <string name="triceps_arm_exercise_6">Dip Machine</string>
+    <string name="triceps_arm_exercise_7">Parallel Bar Dips</string>
+
+
+    <!-- Back WORKOUT-->
+    <!-- Lower Back-->
+
+    <string name="lower_back_exercise_1">Pull-ups Behind Neck</string>
+    <string name="lower_back_exercise_2">Reverse Bentover Barbell Row</string>
+    <string name="lower_back_exercise_3">Hyper Extensions</string>
+    <string name="lower_back_exercise_4">Close Grip Pulldown</string>
+    <string name="lower_back_exercise_5">Standing T-Bar Row</string>
+    <string name="lower_back_exercise_6">Reverse Grip Smith Machine</string>
+    <string name="lower_back_exercise_7">Stiff Leg Barbell</string>
+    <string name="lower_back_exercise_8">Barbell Deadlifts</string>
+    <string name="lower_back_exercise_9">Behind Back Barbell Shrug</string>
+
+    <!-- Upper Back-->
+
+    <string name="upper_back_exercise_1">Pull-ups Wider</string>
+    <string name="upper_back_exercise_2">Decline Push-ups</string>
+    <string name="upper_back_exercise_3">Bentover Barbell Row</string>
+    <string name="upper_back_exercise_4">Arm Dumbbells</string>
+    <string name="upper_back_exercise_5">Wide Grip Seated Cabel Row</string>
+    <string name="upper_back_exercise_6">Dumbbell Incline Bench Rows</string>
+    <string name="upper_back_exercise_7">Barbell Deadlifts</string>
+    <string name="upper_back_exercise_8">Barbel Shrugs</string>
+
+
+    <!-- V_Shape Back-->
+    <string name="v_shape_back_exercise_1">Chilling Bar</string>
+    <string name="v_shape_back_exercise_2">Wide Grip Lat Pull-Down</string>
+    <string name="v_shape_back_exercise_3">Reverse Grip Lat Pull-Down</string>
+    <string name="v_shape_back_exercise_4">Seated Cabel Row</string>
+    <string name="v_shape_back_exercise_5">Close Grip Lat Pull-Down</string>
+    <string name="v_shape_back_exercise_6">One Arm Dumbbell Rows</string>
+    <string name="v_shape_back_exercise_7">T-Bar Close Grip</string>
+    <string name="v_shape_back_exercise_8">Bentover Barbell Row</string>
+    <string name="v_shape_back_exercise_9">Dead Lifts</string>
+
+
+    <!-- Cardio-->
+    <!--Cardio-Cardio-->
+
+    <string name="cardio_exercise_1">Rop Jumping</string>
+    <string name="cardio_exercise_2">Running</string>
+    <string name="cardio_exercise_3">Swimming</string>
+    <string name="cardio_exercise_4">Stair Climber</string>
+    <string name="cardio_exercise_5">Kettle Bells</string>
+    <string name="cardio_exercise_6">Cycling</string>
+    <string name="cardio_exercise_7">Jumping Jack</string>
+    <string name="cardio_exercise_8">Sprinting</string>
+
+
+    <!--Stretching-->
+
+    <string name="stretching_exercise_1">Hamstring Stretch</string>
+    <string name="stretching_exercise_2">Lying Quad Stretch</string>
+    <string name="stretching_exercise_3">Calf Stretch</string>
+    <string name="stretching_exercise_4">Shoulder Stretch</string>
+    <string name="stretching_exercise_5">Triceps Stretch</string>
+    <string name="stretching_exercise_6">Standing Side Stretch</string>
+    <string name="stretching_exercise_7">Standing Body Rotation</string>
+    <string name="stretching_exercise_8">Side Wrist Pull</string>
+    <string name="stretching_exercise_9">Inch Worm</string>
+
+    <!--Yoga-->
+
+    <string name="yoga_exercise_1">Planks</string>
+    <string name="yoga_exercise_2">Opposite Arm and Legs Extension</string>
+    <string name="yoga_exercise_3">Standing Forward Bend</string>
+    <string name="yoga_exercise_4">Warrior One</string>
+    <string name="yoga_exercise_5">Downward Facing Dog</string>
+    <string name="yoga_exercise_6">Upward Facing Dog</string>
+    <string name="yoga_exercise_7">Boat Pose</string>
+    <string name="yoga_exercise_8">Butterfly Pose</string>
+    <string name="yoga_exercise_9">Half Pigeon</string>
+    <string name="yoga_exercise_10">Bridge Pose</string>
+
+
+    <!-- Chest Workot-->
+
+    <!--Lower Chest-->
+
+    <string name="lower_chest_exercise_1">Decline Push-ups</string>
+    <string name="lower_chest_exercise_2">Decline Dumbbell Press</string>
+    <string name="lower_chest_exercise_3">Decline Bench Press</string>
+    <string name="lower_chest_exercise_4">Decline Dumbble Flyes</string>
+    <string name="lower_chest_exercise_5">Lower Butter-flies</string>
+    <string name="lower_chest_exercise_6">Cabel Crossover</string>
+    <string name="lower_chest_exercise_7">Chest Dips</string>
+    <string name="lower_chest_exercise_8">Decline Push-ups</string>
+
+    <!--Middle Chest-->
+
+    <string name="middle_chest_exercise_1">Close Grip Push-ups</string>
+    <string name="middle_chest_exercise_2">Butter-flies</string>
+    <string name="middle_chest_exercise_3">Incline Bench Cabel Flyes</string>
+    <string name="middle_chest_exercise_4">Incline Bench Cabel Flyes</string>
+    <string name="middle_chest_exercise_5">Pec Deck Flyes</string>
+    <string name="middle_chest_exercise_6">Narrow Incline Dumbbell Press</string>
+    <string name="middle_chest_exercise_7">Pullovers</string>
+
+    <!--Upper Chest-->
+
+    <string name="upper_chest_exercise_1">Push-ups</string>
+    <string name="upper_chest_exercise_2">Incline Dumbbell Press</string>
+    <string name="upper_chest_exercise_3">Incline Barbell Press</string>
+    <string name="upper_chest_exercise_4">Flat Bench Dumbbell Press</string>
+    <string name="upper_chest_exercise_5">Barbell Bench Press</string>
+    <string name="upper_chest_exercise_6">Chest Press Machine</string>
+    <string name="upper_chest_exercise_7">Cabel Crossover Flyes Upper</string>
+    <string name="upper_chest_exercise_8">Dumbbell Bent Arm Pullover</string>
+
+    <!-- Legs Workot-->
+
+    <!--Back Thigh-->
+    <string name="back_thigh_exercise_1">Sit-ups Squats</string>
+    <string name="back_thigh_exercise_2">Wider Legs Squatss</string>
+    <string name="back_thigh_exercise_3">Lying Leg Press</string>
+    <string name="back_thigh_exercise_4">Leg Press</string>
+    <string name="back_thigh_exercise_5">Forward Lunges</string>
+    <string name="back_thigh_exercise_6">Romanian Dead Lifts</string>
+    <string name="back_thigh_exercise_7">Pistol Squat</string>
+
+
+    <!--Calfs-->
+
+    <string name="calfs_exercise_1">Body Weight Calf Raises</string>
+    <string name="calfs_exercise_2">Standing Calf Raises Weight</string>
+    <string name="calfs_exercise_3">Sled Calfs Press</string>
+
+
+    <!--Front thighs-->
+    <string name="front_thigh_exercise_1">Sit-ups Squats</string>
+    <string name="front_thigh_exercise_2">Close Legs Squats</string>
+    <string name="front_thigh_exercise_3">Leg Press</string>
+    <string name="front_thigh_exercise_4">Seated Quadriceps Curls</string>
+    <string name="front_thigh_exercise_5">Lying Squats Machine</string>
+    <string name="front_thigh_exercise_6">Hack Squats</string>
+
+
+    <!--Hips-->
+
+    <string name="hips_exercise_1">Quadruped Hip Extensions</string>
+    <string name="hips_exercise_2">Weighted Barbell Hip Thrusters</string>
+    <string name="hips_exercise_3">Bulgarian Split Squats</string>
+    <string name="hips_exercise_4">Kettle Bell Swing</string>
+    <string name="hips_exercise_5">Kneeling Hip Flexor Stretch</string>
+
+
+    <!-- Shoulder Workout-->
+
+    <!--Back Shoulder-->
+
+    <string name="back_shoulder_exercise_1">Upright Barbell Row</string>
+    <string name="back_shoulder_exercise_2">Seated Bent-over Rear Delt Rise</string>
+    <string name="back_shoulder_exercise_3">Standing Front</string>
+    <string name="back_shoulder_exercise_4">Barbell Raise Overhead</string>
+    <string name="back_shoulder_exercise_5">Seated Barbell Military Press</string>
+    <string name="back_shoulder_exercise_6">Front Cabel Raise</string>
+    <string name="back_shoulder_exercise_7">Reverse Machine Flies</string>
+
+    <!--Front Shoulder-->
+
+
+    <string name="front_shoulder_exercise_1">Dumbbell Shoulder Press</string>
+    <string name="front_shoulder_exercise_2">Side Lateral Raise</string>
+    <string name="front_shoulder_exercise_3">Lateral Raise with Bands</string>
+    <string name="front_shoulder_exercise_4">Barbell Shoulder Press</string>
+    <string name="front_shoulder_exercise_5">Arnold Dumbbell Press</string>
+    <string name="front_shoulder_exercise_6">Front Two Dumbbell Raise</string>
+
+    <!--Traps Shoulder-->
+
+    <string name="traps_shoulder_exercise_1">Smith Machine Shrugs</string>
+    <string name="traps_shoulder_exercise_2">Leverage Shrugs</string>
+    <string name="traps_shoulder_exercise_3">Sranding Dumbbell Upright Row</string>
+    <string name="traps_shoulder_exercise_4">Dumbbell Shrugs</string>
+    <string name="traps_shoulder_exercise_5">Calf Machine Shoulder Shrugs</string>
+    <string name="traps_shoulder_exercise_6">Barbell Shrugs</string>
+    <string name="traps_shoulder_exercise_7">Upright Cable Row</string>
+    <string name="traps_shoulder_exercise_8">Behind the back Shrugs</string>
+
+
+    <!-- Wings Workout -->
+
+    <!--V_Shape Wings -->
+
+    <string name="v_shape_wings_exercise_1">Chilling Bar</string>
+    <string name="v_shape_wings_exercise_2">Wide Grip Lat Pull-Down</string>
+    <string name="v_shape_wings_exercise_3">Reverse Grip Lat Pull-Down</string>
+    <string name="v_shape_wings_exercise_4">Seated Cabel Row</string>
+    <string name="v_shape_wings_exercise_5">Close Grip Lat Pull-Down</string>
+    <string name="v_shape_wings_exercise_6">One Arm Dumbbell Rows</string>
+    <string name="v_shape_wings_exercise_7">T-Bar Close Grip</string>
+    <string name="v_shape_wings_exercise_8">Bentover Barbell Row</string>
+    <string name="v_shape_wings_exercise_9">Dead Lifts</string>
+
+    <!-- Wings Extention-->
+
+    <string name="wings_extention_exercise_1">Seated Cabel Row</string>
+    <string name="wings_extention_exercise_2">One Arm Dumbbell Rows</string>
+    <string name="wings_extention_exercise_3">Dumbbell Pull-Over</string>
+    <string name="wings_extention_exercise_4">One Arm Cabel Rows</string>
+    <string name="wings_extention_exercise_5">Bentover Barbell Row</string>
+    <string name="wings_extention_exercise_6">Straight Arm Lat Pull-Down</string>
+
+
+    <string name="banner" translatable="false">ca-app-pub-6682024579057122/2945689080</string>
+    <string name="interstitial" translatable="false">ca-app-pub-6682024579057122/1273993697</string>
+    <string name="bannerappid" translatable="false">ca-app-pub-6682024579057122~2043670950</string>
+
+    <!-- <string name="banner" translatable="false">	ca-app-pub-3940256099942544/6300978111</string>
+     <string name="interstitial" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+     <string name="bannerappid" translatable="false">ca-app-pub-3940256099942544~3347511713</string>-->
+
+
+    <string name="debugFbPlacementId">587359758434043_587361961767156</string>
+    <string name="debugFbPlacementIdInterstitial">587359758434043_587362248433794</string>
+    <string name="debugFbPlacementIdNative">587359758434043_587360698433949</string>
+
+    <!--<string name="debugFbPlacementId">IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID</string>
+    <string name="debugFbPlacementIdInterstitial">IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID</string>
+    <string name="debugFbPlacementIdNative">IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID</string>-->
+
+    <string name="fbAppId">587359758434043</string>
+
+</resources>
